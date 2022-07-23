@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Api-page</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="d-flex">
+      <div>
+        <a href="world-news" class="logo">LOGO</a>
+      </div>
+      <nav class="nav">
+        <ul class="d-flex main-nav">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="discovery.html">DISCOVERY</a></li>
+          <li><a href="#trending">PHOTOS</a></li>
+          <li><a href="#footer">CONTACT</a></li>
+          <li>
+            <a href="api.html" id="avatar-girl"
+              ><img src="images/tiny-img1.png" alt="profile"
+            /></a>
+          </li>
+        </ul>
+        <div id="mobile-menu">
+          <div id="hamburger">
+            <div class="bar line-1"></div>
+            <div class="bar line-2 short"></div>
+            <div class="bar line-3"></div>
+          </div>
+          <div>
+            <a href="#world-news" id="logo">LOGO</a>
+          </div>
+          <div>
+            <a href="api.html"
+              ><img src="images/tiny-img1.png" alt="profile"
+            /></a>
+          </div>
+        </div>
+        <div class="mobile-background">
+          <ul id="mobile-links">
+            <li class="mobile-nav-link" id="mobile-logo">
+              <a href="#world-news">LOGO</a>
+            </li>
+            <li class="mobile-nav-link">
+              <a href="index.html"><img src="images/home.png" alt="" />HOME</a>
+            </li>
+            <li class="mobile-nav-link">
+              <a href="discovery.html"
+                ><img src="images/discover.svg" alt="" />DISCOVERY</a
+              >
+            </li>
+            <li class="mobile-nav-link">
+              <a href="#trending"
+                ><img src="images/photos.svg" alt="" />PHOTOS</a
+              >
+            </li>
+            <li class="mobile-nav-link">
+              <a href="#footer"><img src="images/mail.svg" alt="" />CONTACT</a>
+            </li>
+            <li class="mobile-nav-link">
+              <a href="api.html"
+                ><img
+                  src="images/tiny-img1.png"
+                  id="profile"
+                  alt=""
+                />PROFILE</a
+              >
+            </li>
+          </ul>
+          <div id="mobile-footer">
+            <ul>
+              <li><a href="#">about</a></li>
+              <li><a href="#">help</a></li>
+              <li><a href="#">terms</a></li>
+              <li><a href="#">guidelines</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">testimonials</a></li>
+              <li><a href="#">advertise</a></li>
+              <li><a href="#">integrations</a></li>
+              <li><a href="#">careers</a></li>
+            </ul>
+            <ul id="mobile-icons-list">
+              <li class="instagram">
+                <a href="javascript:void(0)"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <i class="fas fa-globe-americas"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="api-main">
+      <form class="info-form" id="form">
+        <label for="search">Enter number from 1 to 100</label>
+        <input type="text" id="search" placeholder="Search post by its number" />
+      </form>
+      <section id="main"></section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="JS/api.js"></script>
+  </body>
+</html>
